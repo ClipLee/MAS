@@ -14,6 +14,7 @@ public class Main {
             new Pracownik("Adam", "Malysz", new Date(2011, 9, 3), "7 312 000");
             new Pracownik("John", "Snow", new Date(2023, 4, 17));
             new Pracownik("Jerzy", "Trener", new Date(1998, 2, 19), "999 998 997");
+            new Pracownik("Kazimierz", "Izydov", new Date(2012, 5, 11), "111 222 333");
 
             new Kierownik("Kuba", "Kangur", new Date(2010, 10, 3), "854 123 054");
             new Kierownik("Volodymyr", "Zelenski", new Date(1996, 3, 15), "382 566 333");
