@@ -2,7 +2,7 @@ import java.util.Calendar;
 
 public class Main {
 
-    // zwykla: jedna faktura - wiele napraw
+    // zwykla(binarna): jedna faktura - wiele napraw
     // z atrybutem: pracownik - naprawa - atrybutem bedzie data przydzielenia do naprawy i ew data oddzielenia od naprawy
     // kwalifikowana:  czesc zamienna - model - szukanie czesci zamiennej w modelu po nazwie tej czesci,
     // kompozycja: marka - model - model nie moze istniec bez marki
