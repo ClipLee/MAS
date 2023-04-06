@@ -3,13 +3,15 @@ import java.util.Calendar;
 public class Main {
 
     // zwykla(binarna): jedna faktura - wiele napraw
-    // z atrybutem: pracownik - naprawa - atrybutem bedzie data przydzielenia do naprawy i ew data oddzielenia od naprawy
-    // kwalifikowana:  czesc zamienna - model - szukanie czesci zamiennej w modelu po nazwie tej czesci,
+    // z atrybutem: pracownik - naprawa - atrybutem bedzie data przydzielenia do
+    // naprawy i ew data oddzielenia od naprawy
+    // kwalifikowana: czesc zamienna - model - szukanie czesci zamiennej w modelu po
+    // nazwie tej czesci,
     // kompozycja: marka - model - model nie moze istniec bez marki
 
-    //z atrybutem klasa laczaca musi miec 1-1 a klasy zewnetrzne posiadac listy
-    //kwalifikowana musi szukac po kluczu a nie po wartosci - poprawione
-    //kompozycja obsluzyc nulla w klasach
+    // z atrybutem klasa laczaca musi miec 1-1 a klasy zewnetrzne posiadac listy
+    // kwalifikowana musi szukac po kluczu a nie po wartosci - poprawione
+    // kompozycja obsluzyc nulla w klasach
 
     public static void main(String[] args) {
 
@@ -21,17 +23,17 @@ public class Main {
         c2.set(2018, 11, 13);
         c3.set(2018, 11, 16);
 
-        //faktury
+        // faktury
         Faktura f1 = new Faktura(c);
         Faktura f2 = new Faktura(c2);
         Faktura f3 = new Faktura(c3);
 
-        //naprawy
+        // naprawy
         Naprawa n1 = new Naprawa(c);
         Naprawa n2 = new Naprawa();
         Naprawa n3 = new Naprawa();
 
-        //pracownicy
+        // pracownicy
         c.set(Calendar.YEAR, 2012);
         Pracownik p1 = new Pracownik("Jan", "Kowalski", c);
         c.set(Calendar.MONTH, 3);
@@ -41,19 +43,18 @@ public class Main {
         c.set(Calendar.DAY_OF_MONTH, 28);
         Pracownik p3 = new Pracownik("Stefan", "Żarko", c);
 
-        //marki
+        // marki
         c.set(Calendar.YEAR, 2016);
         Marka mr1 = new Marka("Ford");
         Marka mr2 = null;
         Marka mr3 = new Marka("Honda");
 
-        //modele
-            Model m1 = new Model("s1", mr1, "Escort", c);
-            Model m2 = null;
-            Model m3 = new Model("s3", mr1, "Fiesta", c);
-            Model m4 = new Model("s4", mr1, "Focus", c);
-            Model m5 = new Model("s5", mr3, "s2000", c);
-
+        // modele
+        Model m1 = new Model("s1", mr1, "Escort", c);
+        Model m2 = null;
+        Model m3 = new Model("s3", mr1, "Fiesta", c);
+        Model m4 = new Model("s4", mr1, "Focus", c);
+        Model m5 = new Model("s5", mr3, "s2000", c);
 
         // asocjacja zwykla: * napraw - 1 faktura
 
@@ -68,16 +69,16 @@ public class Main {
         n3.setFaktura(f2);
         n3.setFaktura(f3);
 
-       for(Faktura faktura: Faktura.getFaktury()){
-           System.out.println(faktura);
-       }
+        for (Faktura faktura : Faktura.getFaktury()) {
+            System.out.println(faktura);
+        }
 
         // asocjacja z atrybutem: 1 naprawa - * pracownikow
 
         System.out.println("\tDziałania na asocjacji z atrybutem");
 
-        Pracownik[] arr1 = {p1, p2};
-        Pracownik[] arr2 = {p3};
+        Pracownik[] arr1 = { p1, p2 };
+        Pracownik[] arr2 = { p3 };
 
         PracownikNaprawa pn1 = new PracownikNaprawa(c, arr1, n1);
         PracownikNaprawa pn2 = new PracownikNaprawa(c2, arr2, n2);
@@ -107,26 +108,24 @@ public class Main {
 
         System.out.println("\n\tDzialania na kompozycji");
 
-        try{
+        try {
             System.out.println("Próba dodania modelu bez marki");
-            m2 = new Model("s2", mr2, "Escort", c); //Kompozycja - czesc nie istnieje bez calosci
-        } catch(Exception e){
+            m2 = new Model("s2", mr2, "Escort", c); // Kompozycja - czesc nie istnieje bez calosci
+        } catch (Exception e) {
             System.out.println("Error - kompozycja - model musi miec swoja marke");
         }
 
         // usuwanie marki - czesc tez zostanie usunieta
-            System.out.println("\nUsuwanie marki - całości");
-            System.out.println("przed usunieciem marki - cala ekstencja modeli");
-            for(Model model: Model.getModele()){
-                System.out.println(model.toString());
-            }
-            Marka.removeMarka(mr1);
-            System.out.println("po usunieciu marki - cala ekstencja modeli");
-            for(Model model: Model.getModele()){
-                System.out.println(model.toString());
-            }
-
-
+        System.out.println("\nUsuwanie marki - calosci");
+        System.out.println("przed usunieciem marki - cala ekstencja modeli");
+        for (Model model : Model.getModele()) {
+            System.out.println(model.toString());
+        }
+        Marka.removeMarka(mr1);
+        System.out.println("po usunieciu marki - cala ekstencja modeli");
+        for (Model model : Model.getModele()) {
+            System.out.println(model.toString());
+        }
 
     }
 }

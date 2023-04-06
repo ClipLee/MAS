@@ -13,33 +13,34 @@ class Pracownik {
 
     PracownikNaprawa pracownikNaprawa;
 
-    public Pracownik(String imie, String nazwisko, Calendar dataZatrudnienia){
+    public Pracownik(String imie, String nazwisko, Calendar dataZatrudnienia) {
         id = ++recordsNo;
-        this.imie=imie;
-        this.nazwisko=nazwisko;
-        this.dataZatrudnienia=dataZatrudnienia;
+        this.imie = imie;
+        this.nazwisko = nazwisko;
+        this.dataZatrudnienia = dataZatrudnienia;
         pracownicy.add(this);
     }
 
     public void setNaprawa(PracownikNaprawa pracownikNaprawa) {
-        if(this.pracownikNaprawa == pracownikNaprawa) return;
-        if(this.pracownikNaprawa != null) {
+        if (this.pracownikNaprawa == pracownikNaprawa)
+            return;
+        if (this.pracownikNaprawa != null) {
             this.pracownikNaprawa.removePracownik(this);
         }
         this.pracownikNaprawa = pracownikNaprawa;
-        if(pracownikNaprawa != null) {
+        if (pracownikNaprawa != null) {
             pracownikNaprawa.addPracownik(this);
         }
     }
 
-    public String getdataZatrudnieniaString(){
+    public String getdataZatrudnieniaString() {
         return String.format("%1$te.%1$tm.%1$tY", this.dataZatrudnienia);
     }
 
-
     @Override
-    public String toString(){
-        return "Pracownik:\t" + id+ ": " + imie + " " + nazwisko + " - data zatrudnienia: " + this.getdataZatrudnieniaString() + ", nr telefonu: " + nrTelefonu + ", pensja: " + pensja;
+    public String toString() {
+        return "Pracownik:\t" + id + ": " + imie + " " + nazwisko + " - data zatrudnienia: "
+                + this.getdataZatrudnieniaString() + ", nr telefonu: " + nrTelefonu + ", pensja: " + pensja;
     }
 
 }

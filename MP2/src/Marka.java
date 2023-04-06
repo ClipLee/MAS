@@ -8,26 +8,26 @@ public class Marka {
 
     private static List<Marka> marki = new ArrayList<>(); // ekstensja
 
-    public Marka(String nazwa){
-        this.nazwa=nazwa;
+    public Marka(String nazwa) {
+        this.nazwa = nazwa;
         marki.add(this);
     }
 
     // obsluga kompozycji
-    public List<Model> getModels(){
+    public List<Model> getModels() {
         return this.modele;
     }
 
     public void addModel(Model model) {
-        if(!modele.contains(model)) {
+        if (!modele.contains(model)) {
             modele.add(model);
             model.setMarka(this);
         }
 
     }
 
-    public boolean removeModel(Model model){
-        if(model != null && hasModel(model)){
+    public boolean removeModel(Model model) {
+        if (model != null && hasModel(model)) {
             try {
                 Model.removeModel(model);
             } catch (Exception e) {
@@ -39,7 +39,7 @@ public class Marka {
         return false;
     }
 
-    public boolean hasModel(Model model){
+    public boolean hasModel(Model model) {
         return this.modele.contains(model);
     }
 
@@ -48,13 +48,13 @@ public class Marka {
     }
 
     public static boolean removeMarka(Marka marka) {
-        if(!marki.contains(marka))
+        if (!marki.contains(marka))
             return false;
         List<Model> modeleKopia = new ArrayList<Model>();
-        for(Model model : marka.getModels()){
+        for (Model model : marka.getModels()) {
             modeleKopia.add(model);
         }
-        for(Model model : modeleKopia){
+        for (Model model : modeleKopia) {
             marka.removeModel(model);
         }
         return marki.remove(marka);
@@ -66,9 +66,9 @@ public class Marka {
 
     @Override
     public String toString() {
-        String ret = "Marka:\t "+nazwa+"\n";
-        for(Model model: modele){
-            ret += model+"\n";
+        String ret = "Marka:\t " + nazwa + "\n";
+        for (Model model : modele) {
+            ret += model + "\n";
         }
         return ret;
     }

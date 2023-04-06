@@ -9,19 +9,19 @@ public class Model {
 
     private static List<Model> modele = new ArrayList<>(); // ekstensja
 
-    public Model(String nrSeryjny, Marka marka, String nazwa, Calendar dataProdukcji){
-        this.nrSeryjny=nrSeryjny;
-        this.marka=marka;
-        this.nazwa=nazwa;
-        this.dataProdukcji=dataProdukcji;
+    public Model(String nrSeryjny, Marka marka, String nazwa, Calendar dataProdukcji) {
+        this.nrSeryjny = nrSeryjny;
+        this.marka = marka;
+        this.nazwa = nazwa;
+        this.dataProdukcji = dataProdukcji;
         setMarka(marka);
         modele.add(this);
     }
 
-    public static boolean removeModel(Model model) throws Exception{
-        if(model == null || !modele.contains(model))
+    public static boolean removeModel(Model model) throws Exception {
+        if (model == null || !modele.contains(model))
             return false;
-        if(model.getMarka().hasModel(model)){
+        if (model.getMarka().hasModel(model)) {
             modele.remove(model);
             model.getMarka().removeModel(model);
             return true;
@@ -29,13 +29,13 @@ public class Model {
         return false;
     }
 
-    public Marka getMarka(){
+    public Marka getMarka() {
         return this.marka;
     }
 
-    //Obs�uga kompozycji
+    // Obs�uga kompozycji
 
-    public void setMarka(Marka marka){
+    public void setMarka(Marka marka) {
         this.marka = marka;
         marka.addModel(this);
     }
@@ -47,35 +47,33 @@ public class Model {
     // obsluga asocjacji kwalifikowanej
 
     public void addCzescZamienna(CzescZamienna cz) {
-        if(!czesciZamienne.containsKey(cz)) {
+        if (!czesciZamienne.containsKey(cz)) {
             czesciZamienne.put(cz.nazwa, cz);
             cz.setModel(this);
         }
     }
 
     public void removeCzescZamienna(CzescZamienna cz) {
-        if(czesciZamienne.containsValue(cz)) {
+        if (czesciZamienne.containsValue(cz)) {
             czesciZamienne.remove(cz.nazwa);
             cz.setModel(null);
         }
     }
 
-    public CzescZamienna getCzescZamienna(String name) throws Exception{
-        if(!czesciZamienne.containsKey(name)) {
+    public CzescZamienna getCzescZamienna(String name) throws Exception {
+        if (!czesciZamienne.containsKey(name)) {
             throw new Exception("Nie znaleziono części zamiennej: " + name);
         }
         return czesciZamienne.get(name);
     }
 
-
-    public String getDataProdukcjiString(){
+    public String getDataProdukcjiString() {
         return String.format("%1$tY", this.dataProdukcji);
     }
 
-
-
-    public String toString(){
-        return "Model:\tnr seryjny: "+nrSeryjny+", marka: "+marka.getNazwa()+", nazwa: "+nazwa+", data produkcji: "+getDataProdukcjiString();
+    public String toString() {
+        return "Model: nr seryjny: " + nrSeryjny + ", marka: " + marka.getNazwa() + ", nazwa: " + nazwa
+                + ", data produkcji: " + getDataProdukcjiString();
     }
 
 }
