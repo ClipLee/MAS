@@ -9,9 +9,9 @@ public class Main {
     // nazwie tej czesci,
     // kompozycja: marka - model - model nie moze istniec bez marki
 
-    // z atrybutem klasa laczaca musi miec 1-1 a klasy zewnetrzne posiadac listy
-    // kwalifikowana musi szukac po kluczu a nie po wartosci - poprawione
-    // kompozycja obsluzyc nulla w klasach
+    //TODO z atrybutem klasa laczaca musi miec 1-1 a klasy zewnetrzne posiadac listy
+    //TODO kwalifikowana musi szukac po kluczu a nie po wartosci - poprawione
+    //TODO kompozycja obsluzyc nulla w klasach
 
     public static void main(String[] args) {
 
@@ -24,9 +24,9 @@ public class Main {
         c3.set(2018, 11, 16);
 
         // faktury
-        Faktura f1 = new Faktura(c);
         Faktura f2 = new Faktura(c2);
         Faktura f3 = new Faktura(c3);
+        Faktura f1 = new Faktura(c);
 
         // naprawy
         Naprawa n1 = new Naprawa(c);

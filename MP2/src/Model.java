@@ -33,7 +33,7 @@ public class Model {
         return this.marka;
     }
 
-    // Obs�uga kompozycji
+    // Obsluga kompozycji
 
     public void setMarka(Marka marka) {
         this.marka = marka;
