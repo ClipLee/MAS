@@ -2,15 +2,7 @@ import java.util.Calendar;
 
 public class Main {
 
-    // zwykla(binarna): jedna faktura - wiele napraw
-    // z atrybutem: pracownik - naprawa - atrybutem bedzie data przydzielenia do
-    // naprawy i ew data oddzielenia od naprawy
-    // kwalifikowana: czesc zamienna - model - szukanie czesci zamiennej w modelu po
-    // nazwie tej czesci,
-    // kompozycja: marka - model - model nie moze istniec bez marki
-
     //TODO z atrybutem klasa laczaca musi miec 1-1 a klasy zewnetrzne posiadac listy
-    //TODO kwalifikowana musi szukac po kluczu a nie po wartosci - poprawione
     //TODO kompozycja obsluzyc nulla w klasach
 
     public static void main(String[] args) {
