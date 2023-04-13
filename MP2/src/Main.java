@@ -2,7 +2,11 @@ import java.util.Calendar;
 
 public class Main {
 
-    //TODO z atrybutem klasa laczaca musi miec 1-1 a klasy zewnetrzne posiadac listy
+    //Asocjacje
+    //bin: 1 faktura - * Naprawy
+    //atr: Pracownik - naprawa
+    //kwa: Czesc zamienna - model
+    //kom: Marka - model
     //TODO kompozycja obsluzyc nulla w klasach
 
     public static void main(String[] args) {
