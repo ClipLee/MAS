@@ -2,12 +2,12 @@ import java.util.Calendar;
 
 public class Main {
 
-    //Asocjacje
-    //bin: 1 faktura - * Naprawy
-    //atr: Pracownik - naprawa
-    //kwa: Czesc zamienna - model
-    //kom: Marka - model
-    //TODO kompozycja obsluzyc nulla w klasach
+    // Asocjacje
+    // bin: 1 faktura - * Naprawy
+    // atr: Pracownik - naprawa
+    // kwa: Czesc zamienna - model
+    // kom: Marka - model
+    // TODO kompozycja obsluzyc nulla w klasach
 
     public static void main(String[] args) {
 
