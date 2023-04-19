@@ -1,4 +1,4 @@
-package Helpers;
+package mp3.Helpers;
 
 public class PartWithoutTheWholeException extends RuntimeException {
 

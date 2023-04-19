@@ -1,7 +1,8 @@
-import Helpers.PracownikType;
-
+package mp3;
 import java.util.Calendar;
 import java.util.EnumSet;
+
+import mp3.Helpers.PracownikType;
 
 public class Pracownik extends Osoba {
 

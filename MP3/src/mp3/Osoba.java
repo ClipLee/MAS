@@ -1,3 +1,4 @@
+package mp3;
 public abstract class Osoba {
     String imie, nazwisko, nrTelefonu;
 

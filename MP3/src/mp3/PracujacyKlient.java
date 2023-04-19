@@ -1,7 +1,8 @@
-import Helpers.IKlient;
-import Helpers.PracownikType;
-
+package mp3;
 import java.util.Calendar;
+
+import mp3.Helpers.IKlient;
+import mp3.Helpers.PracownikType;
 
 public class PracujacyKlient extends Pracownik implements IKlient {
 

@@ -1,6 +1,7 @@
-import Helpers.SilnikType;
-
+package mp3;
 import java.util.Calendar;
+
+import mp3.Helpers.SilnikType;
 
 public class Sportowy extends Samochod{
     private boolean czyKabriolet;

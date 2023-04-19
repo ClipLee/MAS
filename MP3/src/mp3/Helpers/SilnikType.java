@@ -1,4 +1,4 @@
-package Helpers;
+package mp3.Helpers;
 
 public enum SilnikType {
     ELEKTRYCZNY,

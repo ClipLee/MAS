@@ -1,8 +1,9 @@
-import Helpers.IKlient;
-import Helpers.PracownikType;
-import Helpers.SilnikType;
-
+package mp3;
 import java.util.Calendar;
+
+import mp3.Helpers.IKlient;
+import mp3.Helpers.PracownikType;
+import mp3.Helpers.SilnikType;
 
 public class Main {
 
