@@ -1,4 +1,3 @@
-package MP3.src;
 public abstract class Silnik {
     Double spalanie;
 

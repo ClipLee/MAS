@@ -1,4 +1,3 @@
-package MP3.src;
 import Helpers.PracownikType;
 
 import java.util.Calendar;
@@ -121,7 +120,7 @@ public class Pracownik extends Osoba {
 
     @Override
     public String toString(){
-        return "Pracownik: "+getImie()+" "+getNazwisko()+" - "+getNrTelefonu()+", data zatrudnienia: " + getDataZatrudnienia()+", tytul: "+getPersonType();
+        return "Pracownik: "+getImie()+" "+getNazwisko()+" - "+getNrTelefonu()+", data zatrudnienia: " + getDataZatrudnienia()+", tytuł: "+getPersonType();
     }
 
 

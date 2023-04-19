@@ -1,3 +1,4 @@
+package MP2;
 import java.util.*;
 
 public class Naprawa {

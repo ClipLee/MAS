@@ -1,4 +1,3 @@
-package MP3.src;
 import Helpers.SilnikType;
 
 import java.util.Calendar;
@@ -81,7 +80,7 @@ public class Samochod {
             this.czyUszkodzony=false;
             System.out.println("Naprawiono");
         }else {
-            System.out.println("Samochod już naprawiony");
+            System.out.println("Samochód już naprawiony");
         }
     }
 

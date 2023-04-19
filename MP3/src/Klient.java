@@ -1,5 +1,4 @@
-package MP3.src;
-import MP3.src.Helpers.IKlient;
+import Helpers.IKlient;
 
 public class Klient extends Osoba {
 

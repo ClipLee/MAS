@@ -1,4 +1,3 @@
-package MP3.src;
 
 public class TesterJakosci {
 

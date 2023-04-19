@@ -1,4 +1,3 @@
-package MP3.src;
 import Helpers.SilnikType;
 
 import java.util.Calendar;

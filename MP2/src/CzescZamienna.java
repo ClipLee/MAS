@@ -1,3 +1,4 @@
+package MP2;
 public class CzescZamienna {
 
     String nrSeryjny, nazwa;

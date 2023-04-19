@@ -1,4 +1,3 @@
-package MP3.src;
 public class Elektryczny extends Silnik{
 
     private Double spalanie;

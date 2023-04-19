@@ -1,4 +1,3 @@
-package MP3.src;
 import Helpers.IKlient;
 import Helpers.PracownikType;
 

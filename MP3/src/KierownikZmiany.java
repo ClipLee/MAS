@@ -1,5 +1,4 @@
-package MP3.src;
-import MP3.src.Helpers.PartWithoutTheWholeException;
+import Helpers.PartWithoutTheWholeException;
 
 public class KierownikZmiany {
 

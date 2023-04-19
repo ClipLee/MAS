@@ -1,5 +1,3 @@
-package MP3.src;
-
 import Helpers.IKlient;
 import Helpers.PracownikType;
 import Helpers.SilnikType;
@@ -8,7 +6,7 @@ import java.util.Calendar;
 
 public class Main {
 
-    //TODO poprawic overlapping - enumsety zamiast recznego sprawdzania
+    // poprawic overlapping - enumsety zamiast recznego sprawdzania
 
     // klasa abstrakcyjna: osoba i dziedziczace Klient i Pracownik: metoda wypiszDane
     // overlapping: Mechanik boze byc jednoczesnie testerem jakosci
@@ -24,7 +22,7 @@ public class Main {
         // klasa abstrakcyjna z przeslaniana metoda: Osoba > klient, pracownik
 
         Osoba k1 = new Klient("Jan", "Kowalski", "123 123 123");
-        Osoba p1 = new Pracownik("Zbigniew", "Maciejewski", "123 456 789", c, Helpers.PracownikType.MECHANIK);
+        Osoba p1 = new Pracownik("Zbigniew", "Maciejewski", "123 456 789", c, PracownikType.MECHANIK);
 
         System.out.println("\tAbstract");
         System.out.println(k1);
@@ -41,7 +39,7 @@ public class Main {
         try {
             nullPracownik.becomeTester();
         } catch (Exception e) {
-            System.out.println("Czesc bez calosci");
+            System.out.println("Część bez całości");
         }
         Pracownik multiPracownik = new Pracownik(
                 "Gabriel",
@@ -62,7 +60,7 @@ public class Main {
         // wielodziedziczenie: pracownik moze byc klientem
         // implementuje IKlient
         System.out.println("\tWielodziedziczenie");
-        Pracownik pracujacyKlient = new PracujacyKlient("Mariusz", "Pudzianowski", "111 111 111", c, PracownikType.KIEROWNIK, 15);
+        Pracownik pracujacyKlient = new PracujacyKlient("Mariusz", "Dźwigała", "111 111 111", c, PracownikType.KIEROWNIK, 15);
         PracujacyKlient pracujacyKlient2 = new PracujacyKlient("Wincenty", "Witos", "111 111 111", c, PracownikType.MECHANIK, 5);
         IKlient pracujacyKlient3 = new PracujacyKlient("Konstanty", "Lubomirski", "111 111 111", c, PracownikType.TESTERJAKOSCI, 10);
 
