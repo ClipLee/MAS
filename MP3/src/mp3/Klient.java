@@ -2,7 +2,7 @@ package mp3;
 
 import mp3.Helpers.IKlient;
 
-public class Klient extends Osoba {
+public class Klient extends Osoba implements IKlient{
 
     private int rabat;
 
