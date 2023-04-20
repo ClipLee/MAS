@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MAS.iml" filepath="$PROJECT_DIR$/MAS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/MAS.iml" filepath="$PROJECT_DIR$/.idea/MAS.iml" />
       <module fileurl="file://$PROJECT_DIR$/MP1/MP1.iml" filepath="$PROJECT_DIR$/MP1/MP1.iml" />
       <module fileurl="file://$PROJECT_DIR$/MP2/MP2.iml" filepath="$PROJECT_DIR$/MP2/MP2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MP3/MP3.iml" filepath="$PROJECT_DIR$/MP3/MP3.iml" />
     </modules>
   </component>
 </project>

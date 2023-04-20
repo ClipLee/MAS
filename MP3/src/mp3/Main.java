@@ -1,4 +1,5 @@
 package mp3;
+
 import java.util.Calendar;
 
 import mp3.Helpers.IKlient;
@@ -7,12 +8,13 @@ import mp3.Helpers.SilnikType;
 
 public class Main {
 
-    // poprawic overlapping - enumsety zamiast recznego sprawdzania
+    //TODO poprawic overlapping - enumsety zamiast recznego sprawdzania
 
-    // klasa abstrakcyjna: osoba i dziedziczace Klient i Pracownik: metoda wypiszDane
-    // overlapping: Mechanik boze byc jednoczesnie testerem jakosci
+    // Klasa abstrakcyjna: Osoba, po niej dziedziczą Klient i Pracownik
+    // Overlapping: Mechanik oze byc jednoczesnie testerem jakosci
     // wielodziedziczenie: pracujacy klient
-    // wieloaspektowe: samochod > rozdzielamy po typie np. sportowy, miejski i silniku np. Elektryczny, Benzynowy
+    // wieloaspektowe: samochod > rozdzielamy po typie np. sportowy, miejski i
+    // silniku np. Elektryczny, Benzynowy
     // dynamiczne: mechanik moze sie stac kierownikiem zmiany
 
     public static void main(String[] args) throws Exception {
@@ -47,8 +49,7 @@ public class Main {
                 "Narutowicz",
                 "999 999 999",
                 c,
-                PracownikType.TESTERJAKOSCI_MECHANIK
-        );
+                PracownikType.TESTERJAKOSCI_MECHANIK);
 
         System.out.println(multiPracownik);
 
@@ -61,9 +62,12 @@ public class Main {
         // wielodziedziczenie: pracownik moze byc klientem
         // implementuje IKlient
         System.out.println("\tWielodziedziczenie");
-        Pracownik pracujacyKlient = new PracujacyKlient("Mariusz", "Dźwigała", "111 111 111", c, PracownikType.KIEROWNIK, 15);
-        PracujacyKlient pracujacyKlient2 = new PracujacyKlient("Wincenty", "Witos", "111 111 111", c, PracownikType.MECHANIK, 5);
-        IKlient pracujacyKlient3 = new PracujacyKlient("Konstanty", "Lubomirski", "111 111 111", c, PracownikType.TESTERJAKOSCI, 10);
+        Pracownik pracujacyKlient = new PracujacyKlient("Mariusz", "Dźwigała", "111 111 111", c,
+                PracownikType.KIEROWNIK, 15);
+        PracujacyKlient pracujacyKlient2 = new PracujacyKlient("Wincenty", "Witos", "111 111 111", c,
+                PracownikType.MECHANIK, 5);
+        IKlient pracujacyKlient3 = new PracujacyKlient("Konstanty", "Lubomirski", "111 111 111", c,
+                PracownikType.TESTERJAKOSCI, 10);
 
         pracujacyKlient2.setRabat(10);
         System.out.println(pracujacyKlient);
@@ -89,7 +93,7 @@ public class Main {
         System.out.println(p2);
         System.out.println(p3);
 
-         // obsluga dynamic
+        // obsluga dynamic
         p2.stopBeingMechanik();
         p2.becomeTester();
         p3.becomeKierownik();
