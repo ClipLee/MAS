@@ -1,10 +1,11 @@
 package mp3;
-public class Elektryczny extends Silnik{
+
+public class Elektryczny extends Silnik {
 
     private Double spalanie;
 
     public Elektryczny() {
-        this.spalanie=0.0;
+        this.spalanie = 0.0;
     }
 
     @Override

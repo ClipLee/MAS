@@ -8,14 +8,13 @@ import mp3.Helpers.SilnikType;
 
 public class Main {
 
-    //TODO poprawic overlapping - enumsety zamiast recznego sprawdzania
+    // TODO poprawic overlapping - enumsety zamiast recznego sprawdzania
 
     // Klasa abstrakcyjna: Osoba, po niej dziedziczą Klient i Pracownik
-    // Overlapping: Mechanik oze byc jednoczesnie testerem jakosci
-    // wielodziedziczenie: pracujacy klient
-    // wieloaspektowe: samochod > rozdzielamy po typie np. sportowy, miejski i
-    // silniku np. Elektryczny, Benzynowy
-    // dynamiczne: mechanik moze sie stac kierownikiem zmiany
+    // Overlapping: Mechanik moze byc jednoczesnie testerem jakosci
+    // Wielodziedziczenie: pracujacy klient
+    // Wieloaspektowe: Samochod
+    // Dynamiczne: mechanik moze sie stac kierownikiem zmiany
 
     public static void main(String[] args) throws Exception {
         Calendar c = Calendar.getInstance();

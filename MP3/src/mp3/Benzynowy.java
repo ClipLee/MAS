@@ -1,4 +1,5 @@
 package mp3;
+
 public class Benzynowy extends Silnik {
 
     public Benzynowy(Double spalanie) {

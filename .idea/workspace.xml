@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88b1d3f1-a66d-49f5-a06b-66a3e7298e54" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/MAS.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MP2/MP2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MP2/MP2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MP3/MP3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MP3/MP3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MP3/src/mp3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/MP3/src/mp3/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +36,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -54,6 +50,7 @@
       <updated>1681943456389</updated>
       <workItem from="1681943457400" duration="2897000" />
       <workItem from="1681951069693" duration="283000" />
+      <workItem from="1681951578946" duration="1385000" />
     </task>
     <servers />
   </component>

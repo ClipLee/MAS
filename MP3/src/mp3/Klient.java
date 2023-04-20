@@ -1,4 +1,5 @@
 package mp3;
+
 import mp3.Helpers.IKlient;
 
 public class Klient extends Osoba {
@@ -8,16 +9,17 @@ public class Klient extends Osoba {
     public Klient(String imie, String nazwisko, String nrTelefonu) {
         super(imie, nazwisko, nrTelefonu);
     }
+
     public Klient(String imie, String nazwisko, String nrTelefonu, int rabat) {
         super(imie, nazwisko, nrTelefonu);
-        this.rabat=rabat;
+        this.rabat = rabat;
     }
 
-    public String getRabat(){
-        if(rabat==0){
+    public String getRabat() {
+        if (rabat == 0) {
             return "brak";
-        } else{
-            return Integer.toString(this.rabat)+"%";
+        } else {
+            return Integer.toString(this.rabat) + "%";
         }
     }
 
@@ -27,19 +29,16 @@ public class Klient extends Osoba {
 
     @Override
     public void napraw(Samochod samochod) {
-        if(samochod.CzyUszkodzony()) {
+        if (samochod.CzyUszkodzony()) {
             System.out.println("Oddaj samochód do warsztatu");
-        }else{
+        } else {
             System.out.println("Nie ma potrzeby naprawiać tego samochodu");
         }
     }
 
     @Override
-    public String toString(){
-        return "Klient: "+getImie()+" "+getNazwisko()+" - "+getNrTelefonu()+", rabat: "+getRabat();
+    public String toString() {
+        return "Klient: " + getImie() + " " + getNazwisko() + " - " + getNrTelefonu() + ", rabat: " + getRabat();
     }
-
-
-
 
 }

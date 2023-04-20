@@ -1,8 +1,11 @@
 package mp3;
+
 public abstract class Silnik {
     Double spalanie;
 
-    public Silnik(){}
+    public Silnik() {
+    }
+
     public Silnik(Double spalanie) {
         this.spalanie = spalanie;
     }
