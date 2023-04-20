@@ -2,7 +2,7 @@ package mp3;
 
 public class TesterJakosci {
 
-    Pracownik pracownik;
+    private Pracownik pracownik;
 
     public TesterJakosci(Pracownik pracownik) throws Exception {
         if (pracownik == null)

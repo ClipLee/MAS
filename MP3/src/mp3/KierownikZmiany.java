@@ -4,7 +4,7 @@ import mp3.Helpers.PartWithoutTheWholeException;
 
 public class KierownikZmiany {
 
-    static int premiaDodatkowa = 400;
+    private static int premiaDodatkowa = 400;
     private Pracownik pracownik;
 
     public KierownikZmiany(Pracownik pracownik) {

@@ -4,7 +4,7 @@ import mp3.Helpers.IKlient;
 
 public class Klient extends Osoba {
 
-    int rabat;
+    private int rabat;
 
     public Klient(String imie, String nazwisko, String nrTelefonu) {
         super(imie, nazwisko, nrTelefonu);

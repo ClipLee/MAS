@@ -1,7 +1,7 @@
 package mp3;
 
 public abstract class Osoba {
-    String imie, nazwisko, nrTelefonu;
+    private String imie, nazwisko, nrTelefonu;
 
     public Osoba(String imie, String nazwisko, String nrTelefonu) {
         this.imie = imie;
