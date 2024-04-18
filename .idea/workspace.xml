@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="88b1d3f1-a66d-49f5-a06b-66a3e7298e54" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MP3/src/mp3/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/MP3/src/mp3/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dokumentacja_projekt/dokumentacja.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Dokumentacja_projekt/dokumentacja.docx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +32,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/klips/Documents/PJATK/6 - Letni/MAS/Omni-kom",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -51,6 +52,8 @@
       <workItem from="1681943457400" duration="2897000" />
       <workItem from="1681951069693" duration="283000" />
       <workItem from="1681951578946" duration="1385000" />
+      <workItem from="1686682155570" duration="22000" />
+      <workItem from="1686786055534" duration="58000" />
     </task>
     <servers />
   </component>
